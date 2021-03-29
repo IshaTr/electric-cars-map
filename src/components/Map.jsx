@@ -58,7 +58,7 @@ const Map = () => {
         source: 'car-points-data',
         type: 'symbol',
         layout: {
-          // referred from: https://labs.mapbox.com/maki-icons
+          // referred from documentation: https://labs.mapbox.com/maki-icons
           'icon-image': 'car-15',
           'icon-padding': 0,
           'icon-size': 2,
