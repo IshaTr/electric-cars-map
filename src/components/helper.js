@@ -3,7 +3,7 @@ const fetchCarData = async () => {
   const carData = await fetch('https://api.openchargemap.io/v3/poi/?output=json&countrycode=DE&maxresults=10&compact=true&verbose=false&latitude=52.520008&longitude=13.404954&distance=10&distanceunit=KM', {
     method: 'get',
     headers: new Headers({
-      'X-API-Key': 'e8570975-f1a9-45b8-83c2-cf93e4631356',
+      'X-API-Key': `${process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}`,
       'Content-Type': 'application/json'
     })
   }).then((response) => response.json())
